@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>음악 태그 audio</title>
+</head>
+<body>
+<!-- 형식
+<aoudio controls autoplay src = "">
+<source src = "" type = ">"</aoudio>
+ -->
+<ul>
+<b>audio태그 속성</b>
+<li>controls : 웹 화면에 컨트롤 막대를 표시합니다. 컨트롤 막대에는 재생/멈춤, 진행바, 볼륨 등이 있습니다.</li>
+<li>autoplay : 오디오를 자동 재생</li>
+<li>loop : 오디오를 반복해서 재생</li>
+<li>muted : 오디오는 재생하지만 소리는 음소거</li>
+<li>preload : 재생 버튼을 눌러 재생하기 전에 오디오 파일을 다운로드해서 준비</li>
+<li>type : 오디오 파일의 MIME 형식 지정</li>
+<hr>
+<b>audio 태그에서 사용할 수 있는 파일</b>
+<li><b>.mp3</b></li>
+대부분의 음원에서 사용되며 Moving Picture Experts Group에 의해 개발<br>
+MPEG-1의 오디오 규격으로 개발된 손실 압축형 파일 형식
+<li><b>.wav .wave</b></li>
+IBM과 Microsoft에 의해 개발된 비압축 방식의 표준 오디오 파일 포멧
+<li><b>.ogg .ogv</b></li>
+Xiph 재단에 의해 개발되었으며,<br>
+MP3의 대안으로 개발된 특허권으로 보호되지 않는 개방형 공개 멀티미디어 파일 형식(라이센스 없이 무료이므로 게임등에서 많이 사용)
+</ul>
+<hr>
+<audio controls>
+<source src = "../resource/audio/ladymov.mp3" type = "audio/mp3">
+<source src = "../resource/audio/ladymov.ogg" type = "audio/ogg">
+</audio>
+</body>
+</html>
