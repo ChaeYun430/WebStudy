@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력 양식 태그</title>
+</head>
+<body>
+	<h3>form 태그</h3>
+	정보를 입력 또는 선택하고 버튼을 클릭할 때 정보를 서버에 전달하는 CGI기능
+	<br> 응답받는 양방향의 의사소통을 지원하는 입력 양식
+	<br> 내부에는 클라이언트로부터 입려받아 서버로 보내기 위한 요소 작성
+	<br>태그 종류 : input, select, textarea
+	<br>
+
+	<p>
+		<b>CGI(Common Gateway Interface)</b><br> 웹 서버와 클라이언트 사이에서 데이터를
+		주고받기 위한 표준화된 인터페이스<br> C, Visual Basic, Perl, PHP, ASP 등을 이용하여 작성<br>
+		form태그의 name속성과 사용자가 입력한 데이터를 한 상으로 서버에 전송<br>
+	</p>
+
+	<table border="1">
+		<caption>[form 태그 속성]</caption>
+		<tr>
+			<th>속성</th>
+			<th>설명</th>
+		</tr>
+		<tr>
+			<td>action = "URL"</td>
+			<td>form의 내용을 처리하기 위해 서버 쪽 URL 지정</td>
+		</tr>
+		<tr>
+			<td>method = "get/post"</td>
+			<td>클라이언트의 데이터를 서버로 보내기 위한 방법 설정<br>
+				<table border="1">
+					<tr>
+						<td rowspan="2">get(기본값)</td>
+						<td>서버로 데이터를 전송할 때 길이의 제한있음</td>
+					</tr>
+					<tr>
+						<td>주소 표시줄에 전송값 출력</td>
+					</tr>
+					<tr>
+						<td>post</td>
+						<td>대용량이거나 보안이 필요한 데이터를 서버로 전송할 때 적합</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>enctype = ""</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>target = "윈도우명"</td>
+			<td>form에서 입력 데이터의 처리된 결과를 표시할 윈도우</td>
+		</tr>
+		<tr>
+			<td>name = ""</td>
+			<td>form을 식별하기 위해 이름 지정</td>
+		</tr>
+		<tr>
+			<td>accept-charset = ""</td>
+			<td>전송에 사용할 문자 인코딩을 지정</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input태그</title>
+</head>
+<body>
+
+	<table border="1">
+		<caption>[input태그 속성]</caption>
+		<tr>
+			<th>속성</th>
+			<th>설명</th>
+		</tr>
+		<tr>
+			<td>type = "입력 타입"</td>
+			<td>text, password, checkbox, radio<br>submit, reset,
+				button, image, file, hidden
+			</td>
+		</tr>
+		<tr>
+			<td>name = "변수명"</td>
+			<td>서버에 전송될 양식의 이름</td>
+		</tr>
+		<tr>
+			<td>vaule = "기본입력 값"</td>
+			<td>입력변수의 초기값</td>
+		</tr>
+		<tr>
+			<td>size = "입력양식길이"</td>
+			<td>입력필드 길이</td>
+		</tr>
+		<tr>
+			<td>maxlength ="입력 문자수"</td>
+			<td>실제 입력할 수 있는 최대 문자수</td>
+		</tr>
+		<tr>
+			<td>src = "URL"</td>
+			<td>이미지 버튼을 만들 때 이미지의 주소<br>(type = "image"에서만 사용)
+			</td>
+		</tr>
+		<tr>
+			<td>checked</td>
+			<td>기본 선택값 설정<br>(type = "checkbox"와 type = "radio"에서 사용)
+			</td>
+		</tr>
+		<tr>
+			<td>readonly</td>
+			<td>읽기 전용 속성</td>
+		</tr>
+		<tr>
+			<td>aceept</td>
+			<td>audio, video, image에서 파일 확장자 표시<br>(type = "file"에서만
+				사용)
+			</td>
+		</tr>
+		<tr>
+			<td>alt</td>
+			<td>이미지 대신 쓸 수 있는 텍스트<br>(type = "image"에서만 사용)
+			</td>
+		</tr>
+	</table>
+	<hr>
+	<form action="ex01_01.html" method="get">
+		<table border="0">
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="id" size="20"></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="pwd" size="20"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" value="목록">
+					<input type="submit" value="전송"> <input type="reset"
+					value="취소"></td>
+			</tr>
+		</table>
+	</form>
+	<hr>
+	<form>
+		<table border="0">
+			<tr>
+				<td>성별<br>
+				<td><input type="radio" name="gender" value="man" checked>남자
+					<input type="radio" name="gender" value="woman">여자</td>
+			</tr>
+			<tr>
+				<td>취미</td>
+				<td><input type="checkbox" name="hobby" value="climbing">등산
+					<input type="checkbox" name="hobby" value="traveling">여행 <input
+					type="checkbox" name="hobby" value="fishing">낚시</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

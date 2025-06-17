@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>label & fieldset & legend 태그</title>
+</head>
+<body>
+	<ul>
+		<b>[label태그]-요소 간 연결 관계 설정</b>
+		<li>for : 연결하려는 id의 이름 설정</li>
+		<li>입력박스(input)와 레이블(label)을 연결(클릭으로 활성화)</li>
+	</ul>
+	<ul>
+		<b>[fieldset & legend 태그]-입력양식 그룹 지정 & 이름</b>
+		<li>fieldset : 여러 개의 폼 요소 그룹화</li>
+		<li>legend : 그룹화한 요소의 제목 또는 설명</li>
+	</ul>
+	<form>
+		<label>이름 <input type="text" name="name"></label><br> <br>
+		<label for="myName">이름</label> <input type="text" name="name"
+			id="myName">
+	</form>
+	<form>
+		<fieldset>
+			<legend>커피 사이즈는 어떤걸로 할까요?</legend>
+			<p>
+				<input type="radio" name="size" id="size1" value="small" /> <label
+					for="size1">Small</label>
+			</p>
+			<p>
+				<input type="radio" name="size" id="size2" value="medium" /> <label
+					for="size2">Medium</label>
+			</p>
+			<p>
+				<input type="radio" name="size" id="size3" value="large" /> <label
+					for="size3">Large</label>
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>
