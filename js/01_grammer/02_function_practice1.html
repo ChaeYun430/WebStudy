@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>함수 실습</title>
+</head>
+<body>
+	<script>
+		function kindShape() {
+			document.write("**declaratory function** <br>");
+			return;
+		}
+		function circleSize(r) {
+			document.write("원의 넓이 = " + (r * r * 3.14) + "<br>");
+		}
+		function getSquareSize(bottom, height) {
+			return bottom * height;
+		}
+		kindShape();
+		circleSize(10);
+		document.write("사각형의 넓이 = " + getSquareSize(4, 5));
+	</script>
+	<p>
+	<script>
+		document.write("**anonymous function**<br>")
+		var getTrapezoid = function(bottom, top, height) {
+			return (bottom + top) * height / 2.0;
+		}
+		document.write("사다리꼴의 넓이=" + getTrapezoid(5, 4, 3));
+	</script>
+	<p>
+	<script>
+	document.write("**built-in function**<br>")
+		//선언된 함수
+		function ex1() {
+			alert(encodeURI('가나다') + "\n"
+					+ decodeURI("%EA%B0%80%EB%82%98%EB%8B%A4"))
+		}
+		function ex2() {
+			var x = 10, y = 15;
+			alert(String(x) + String(y));
+		}
+		//문자열(문자로 된 수식)을 JavaScript의 수식으로 인식, 실행, 결과 반환
+		function ex3() {
+			var ob1 = eval("var num = 5+2");
+			var ob2 = eval("({'a':1, 'b':2, 'c':3})");
+			alert(num + "\n" + ob2.b); //ob2가 가리키는 a키의 value값
+		}
+	</script>
+	
+	<form name="frm">
+		<!-- 버튼에 기본입력값을 설정하고 클릭하면 지정한 함수로 이동한다. -->
+		<input type="button" onclick="ex1()" value="연습1">&nbsp; <input
+			type="button" onclick="ex2()" value="연습2">&nbsp; <input
+			type="button" onclick="ex3()" value="연습3">
+	</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	객체 : 데이터와 데이터를 처리하는 기술의 조합
+	<hr>
+	<script>
+		document.write("1. 리터럴을 이용한 객체 생성<br>");
+		document.write("선언과 동시에 객체 생성<br>");
+		var User = {
+			name1 : 'kim',
+			age1 : 25,
+			view1 : function() {
+				document.write('My name is ' + this.name1 + "<br>");
+				document.write('My age is ' + this.age1);
+			}
+		};
+		document.write(typeof User + "<br>");
+		User.view1();
+	</script>
+	<hr>
+	<script>
+		document.write("2. 생성자 함수를 이용한 객체 생성<br>");
+		document.write("- 빈 Object 객체 생성 후 프로퍼티와 메서드 추가<br>");
+		var User = new Object();
+		User.name2 = 'kim';
+		User.age2 = 25;
+		User.view2 = function() {
+			document.write('My name is ' + this.name2 + "<br>");
+			document.write('My age is ' + this.age2);
+		};
+		User.view2();
+	</script>
+	<p>
+	<script>
+		document.write("- 사용자 정의 생성자로 객체 생성 후 참조변수에 대입<br>");
+		function Object1(name3, age3) {
+			this.name3 = name3;
+			this.age3 = age3;
+			this.view3 = function() {
+				document.write('나의 이름은 ' + this.name3 + '이고 나이는 ' + this.age3
+						+ "세입니다.<br>");
+			};
+		}
+		var user1 = new Object1('kim', 25);
+		var user2 = new Object1('lee', 20);
+		user1.view3();
+		user2.view3();
+	</script>
+	<hr>
+	3. Object.create()
+</body>
+</html>

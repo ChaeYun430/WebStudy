@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>String 객체</title>
+</head>
+<body>
+	<a href="#밑으로가">밑으로가</a><br>
+	<script>
+		var data1 = "javascript test" //리터럴형
+		var data = new String("javascript test"); //객체형
+		document.write("data: " + data);
+		document.write("<br>data.small(): " + data.small());
+		document.write("<br>data.big(): " + data.big());
+		document.write("<br>data.big().big(): " + data.big().big());
+		document.write("<br>data.blink(): " + data.blink());
+		document.write("<br>data.sub(): " + data.sub());
+		document.write("<br>data.sup(): " + data.sup());
+		document.write("<br>data.fontsize(1): " + data.fontsize(1));
+		document.write("<br>data.fontsize(7): " + data.fontsize(7));
+		document.write("<br>data.fontcolor('blue'): " + data.fontcolor('blue'));
+		document.write("<br>data.toUpperCase(): " + data.toUpperCase());
+		document.write("<br>'JAVA'.toLowerCase(): " + 'JAVA'.toLowerCase());
+		document.write("<br>data.italics(): " + data.italics());
+		document.write("<br>data.strike(): " + data.strike());
+		document.write("<br>data.link('https://www.google.com'): "
+				+ data.link('https://www.google.com'));
+		
+		document.write("<hr>");
+		
+		document.write("<br>data.charAt(0): " + data.charAt(0));
+		document.write("<br>data.indexOf('t'): " + data.indexOf('t'));
+		document.write("<br>data.lastIndexOf('t'): " + data.lastIndexOf('t'));
+		document.write("<br>data.substring(1,4): " + data.substring(1,4));
+		document.write("<br>data.slice(1,4): " + data.slice(1,4));
+		document.write("<br>data: " + data);
+		document.write("<br>data: " + data);
+		document.write("<br>data: " + data);
+		document.write("<br>data: " + data);
+
+		
+	</script>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<caption><b>slice와 substring 차이</b><br></caption>
+	<tr><th rowspan = "2"> start > end </th></tr>
+	<tr><th>slice</th><td> 비어있는 string, 즉 ""을 리턴</td></tr>
+	
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<script>
+		document.write("<br>data.anchor('밑으로가'): " + data.anchor('밑으로가'));
+	</script>
+</body>
+</html>

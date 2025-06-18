@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>함수 실습</title>
+</head>
+<body>
+<script>
+function plusfunc(){
+	var a = parseInt(frm.a.value);
+	var b = parseInt(frm.b.value);
+	//변환 실패시 문자열로 인식
+	if (isNaN(a) || isNaN(b)) { //검증 후 계산  //""만 인식하네......ㅜㅜ
+		//문자가 있으면 참
+		//둘 다 숫자여야 거짓
+		alert("a값 또는 b값은 숫자가 아닙니다.");
+		frm.a.value = "";
+		frm.b.value = "";
+		frm.a.focus();
+		return;
+	}
+	frm.rs.value = a + b;
+}
+function divfunc(){ //수식 실행 후 검증
+	//Number()가 상위개념 parse__보다
+	var a = Number(frm.a.value);
+	var b = Number(frm.b.value);
+	rs = a/b;
+	if (b==0) {
+		alert("0으로 나눌 수 없습니다.");
+		frm.a.value = "";
+		frm.b.value = "";
+		frm.a.focus();
+		return;
+	}
+	//결과값이 무한소수이면 경고
+	if (isFinite(rs)==true) {
+		alert("값이 유한하지 않습니다.");
+		frm.a.value = "";
+		frm.b.value = "";
+		frm.a.focus();
+		return;
+	}
+	frm.rs.value = rs;
+}
+</script>
+
+<form name = "frm">
+A값 : <input type = "text" size = "7" name = "a"><br>
+B값 : <input type = "text" size = "7" name = "b"><br>
+<input type = "button" name ="+" value = "더하기" onclick = "plusfunc()">
+<input type = "button" name ="-" value = "나누기" onclick = "divfunc()"><br>
+결과 : <input type = "text" size = "7" name = "rs">
+</form>
+
+</body>
+</html>
