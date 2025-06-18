@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>window 객체</title>
+</head>
+<body>
+<b>특징</b>
+-global object(전역 개체)<br>
+-브라우저 객체 모델의 최상위 객체<br>
+-window의 형태와 위치를 변경할 수 있는 메서드<br>
+-생략 가능
+<hr>
+-open() : 새로운 윈도우 객체 생성<br>
+-alert() : 경고창<br>
+-prompt() : 입력창<br>
+-confirm() : 확인/취소 창<br>
+-setInterval() : 일정 시간마다 실행<br>
+-setTimeout() : 타이머의 시간이 만료된 후 실행문을 수행<br>
+-moveTo(x, y) : 윈도우를 현재 위치에서 절대적 위치로 이동<br>
+-resizeTo(x, y) : 윈도우의 화면을 현재 크기에서 (x, y)만큼 증가시킴<br>
+-scrollBy(x, y) : 윈도우 스크롤의 위치를 절대 위치로 이동<br>
+-focus() : 윈도우에 초점을 맞춤<br>
+-blur() : 윈도우에 초점을 제거<br>
+-close() : 윈도우를 닫음<br>
+<hr>
+<script>
+//익명 함수
+window.onload = function(){ //브라우저를 실행하면 바로 호출하는 이벤트
+	var win = window.open('')
+}</script>
+
+
+
+</body>
+</html>
