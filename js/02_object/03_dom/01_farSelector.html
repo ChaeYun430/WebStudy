@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<b>원거리 선택자</b><br>
+getElementById("id명")<br>
+getElementByName("name명")<br>
+getElementByTagName("tag명")<p>
+<b>속성(설정 또는 반환)</b><br>
+innerText<br>
+innerHTML<p>
+
+<script>
+function process1(){
+	var ob = document.getElementById("txt").value;
+	document.getElementById("view1").innerText = ob;
+}
+function process2(){
+	var ob = document.getElementById("txt").value;
+	document.getElementById("view2").innerHTML = ob;
+}
+</script>
+<input type = "text" id = "txt" size = "50" name = "text">
+<input type = "button" value = "출력 1" onclick = "process1()">
+<input type = "button" value = "출력 2" onclick = "process2()">
+<br><br><br>
+<div id = "view1"></div>
+<div id = "view2"></div>
+
+<script>
+function choice(){
+	var fruits = document.getElementByName("check");
+	var text = "내가 좋아하는 과일은 ";
+	for (var i = 0; i < fruit.length ; i++) {
+		if (fruits[i].checked == true) {
+			text += frurits[i].value;
+			text += "&nbsp;&nbsp;";
+		}
+	}
+	text += "입니다.";
+	document.getElementById("demo").innerHTML = text;
+}
+</script>
+좋아하는 과일을 선택하시오<br>
+<input type = 'checkbox' name = 'check' value = 'orange'>orange<br>
+<input type = 'checkbox' name = 'check' value = 'apple'>apple<br>
+<input type = 'checkbox' name = 'check' value = 'banana'>banana<br>
+<input type = 'checkbox' name = 'check' value = 'melon'>melon<br>
+<input type = 'button' onclick = 'choice()' value = '선택'><br><br>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>고전 이벤트 모델</title>
+</head>
+<body>
+문서 객체의 이벤트를 사용<br>
+
+<script>
+window.onload = function(){
+	var btn = document.getElementById('btn1');
+	btn1.onclick = function(){
+		alert('클릭1');
+		btn1.onclick = null;
+	}
+};
+</script>
+<!-- id가 객체와 이벤트 속성 연결 -->
+<input type = "button" id = "btn1" value = "클릭1"> 
+<input type = "button" id = "btn2" value = "클릭2" onclick = "alert('클릭2')">
+</body>
+</html>

@@ -1,1 +1,4 @@
 fontfamily cdn google
+https://www.lipsum.com/
+https://placeholderjs.com/
+https://getbootstrap.kr/
